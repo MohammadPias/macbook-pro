@@ -31,33 +31,33 @@
                     <!-- Memory Button -->
                     <div class="my-8">
                         <h3 class="text-2xl font-medium">Memory</h3>
-                        <button
+                        <button id="8gbMemoryBtn"
                             class="my-2 mx-1 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">8GB
                             Unified Memory</button>
-                        <button
+                        <button id="16gbMemoryBtn"
                             class="my-2 mx-1 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">16GB
                             Unified Memory</button>
                     </div>
                     <!-- Storage Button -->
                     <div class="my-8">
                         <h3 class="text-2xl font-medium">Storage</h3>
-                        <button
+                        <button id="256gbStorageBtn"
                             class="my-2 mx-1 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 roundegitd shadow">256GB
                             SSD Storage</button>
-                        <button
+                        <button id="512gbStorageBtn"
                             class="my-2 mx-1 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">512GB
                             SSD Storage</button>
-                        <button
+                        <button id="1tbStorageBtn"
                             class="my-2 mx-1 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">1TB
                             SSD Storage</button>
                     </div>
                     <!-- Shipping button -->
                     <div class="my-8">
                         <h3 class="text-2xl font-medium">Choose your delivery option</h3>
-                        <button
+                        <button id="freeShip"
                             class="my-2 mx-1 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">Friday,25
                             Aug Free Prime delivery</button>
-                        <button
+                        <button id="expressShip"
                             class="my-2 mx-1 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">Monday,25
                             Aug delivery charge $20</button>
                     </div>
@@ -83,25 +83,25 @@
                             </h3>
                         </div>
                         <div>
-                            <h3 class="text-2xl font-medium">$<span>1299</span></h3>
-                            <h3 class="text-2xl font-medium">$<span>0</span></h3>
-                            <h3 class="text-2xl font-medium">$<span>0</span></h3>
-                            <h3 class="text-2xl font-medium">$<span>0</span></h3>
+                            <h3 class="text-2xl font-medium">$<span id="basedPrice">1299</span></h3>
+                            <h3 class="text-2xl font-medium">$<span id="memoryPrice">0</span></h3>
+                            <h3 class="text-2xl font-medium">$<span id="storagePrice">0</span></h3>
+                            <h3 class="text-2xl font-medium">$<span id="shippingPrice">0</span></h3>
                             <br>
-                            <h3 class="text-2xl font-medium">$<span>0</span></h3>
+                            <h3 class="text-2xl font-medium">$<span id="totalPrice">1299</span></h3>
                         </div>
                     </div>
-                    <!-- Promok code -->
+                    <!-- Promo code -->
                     <div>
-                        <h3 class="text-2xl font-medium mt-4">Add Promo Code</h3>
-                        <input class="py-2 px-4 border border-gray-400 rounded shadow mr-2" type="text">
-                        <button
+                        <p class="text-2xl font-medium mt-4">Add Promo Code</p>
+                        <input id="promoInput" class="py-2 px-4 border border-gray-400 rounded shadow mr-2" type="text">
+                        <button id="promoBtn"
                             class="bg-red-700 hover:bg-red-500 text-gray-100 font-semibold py-2 px-4 border border-gray-400 rounded shadow">Apply</button>
                     </div>
                 </div>
             </div>
             <hr class="mb-2">
-            <h1 class="text-5xl font-semibold text-center">Total: $<span>1299</span></h1>
+            <h1 class="text-5xl font-semibold text-center">Total: $<span id="grandtotal">1299</span></h1>
         </section>
     </header>
     <main>
