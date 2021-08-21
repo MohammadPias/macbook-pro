@@ -30,6 +30,26 @@ document.getElementById('expressShip').addEventListener('click', function () {
     totalPrice();
 })
 
+function priceUpdate(price, extraPrice) {
+    const currentAmount = document.getElementById(price);
+    const currentAmountText = parseFloat(currentAmount.innerText);
+    currentAmount.innerText = extraPrice;
+};
+/* Total Price */
+function totalPrice() {
+    const memoryCost = parseFloat(document.getElementById('memoryPrice').innerText);
+    const storageCost = parseFloat(document.getElementById('storagePrice').innerText);
+    const shippingCost = parseFloat(document.getElementById('shippingPrice').innerText);
+    const basedAmount = document.getElementById('basedPrice');
+    const basedAmountInnerText = parseFloat(basedAmount.innerText);
+    const totalCost = memoryCost + storageCost + shippingCost + basedAmountInnerText;
+    const currentTotalCost = document.getElementById('totalPrice');
+    currentTotalCost.innerText = totalCost;
+
+    /* Grand Total Amount */
+    const currentFinalCost = document.getElementById('grandtotal');
+    currentFinalCost.innerText = totalCost;
+};
 /* Promo Code */
 document.getElementById('promoBtn').addEventListener('click', function(){
     const promoInnerValue = document.getElementById('promoInput').value;
@@ -41,24 +61,4 @@ document.getElementById('promoBtn').addEventListener('click', function(){
         currentFinalCost.innerText = discount;
         document.getElementById('promoBtn').setAttribute('disabled', true);
     }
-})
-
-function priceUpdate(price, extraPrice) {
-    const currentAmount = document.getElementById(price);
-    const currentAmountText = parseFloat(currentAmount.innerText);
-    currentAmount.innerText = extraPrice;
-};
-function totalPrice() {
-    const memoryCost = parseFloat(document.getElementById('memoryPrice').innerText);
-    const storageCost = parseFloat(document.getElementById('storagePrice').innerText);
-    const shippingCost = parseFloat(document.getElementById('shippingPrice').innerText);
-    const basedAmount = document.getElementById('basedPrice');
-    const basedAmountInnerText = parseFloat(basedAmount.innerText);
-    const totalCost = memoryCost + storageCost + shippingCost + basedAmountInnerText;
-
-    const currentTotalCost = document.getElementById('totalPrice');
-    currentTotalCost.innerText = totalCost;
-
-    const currentFinalCost = document.getElementById('grandtotal');
-    currentFinalCost.innerText = totalCost;
-}
+});
