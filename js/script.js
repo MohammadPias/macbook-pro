@@ -39,6 +39,7 @@ document.getElementById('promoBtn').addEventListener('click', function(){
     if(promoInnerValue == 'stevekaku'){
         const discount = innerFinalCost-(innerFinalCost*20/100);
         currentFinalCost.innerText = discount;
+        document.getElementById('promoBtn').setAttribute('disabled', true);
     }
 })
 
